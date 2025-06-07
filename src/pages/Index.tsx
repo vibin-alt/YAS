@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
-import { Heart, Users, Calendar as CalendarIcon, MapPin, Phone, Mail, Droplets, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Heart, Users, Calendar as CalendarIcon, MapPin, Phone, Mail, Droplets, Facebook, Instagram, MessageCircle,Trophy,Palette } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
@@ -119,12 +119,12 @@ const Index = () => {
     {
       title: "Sports Development",
       description: "We actively organize and participate in local and regional sports events, promoting fitness and team spirit.",
-      icon: Heart,
+      icon: Trophy,
     },
     {
       title: "Arts & Cultural Programs",
       description: "We believe in nurturing artistic expression. Our club hosts a variety of programs such as:",
-      icon: Users,
+      icon: Palette,
     },
     {
       title: "Community Service",
