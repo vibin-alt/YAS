@@ -394,7 +394,7 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                
+                <img src="/YAS.jpeg" alt="Club Logo" className="h-10 w-10 object-contain" />
                 <h4 className="text-xl font-bold">Youth Arts & Sports Club</h4>
               </div>
               <p className="text-gray-400 mb-4">
@@ -445,14 +445,17 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
               <h5 className="text-lg font-semibold mb-4">Quick Links</h5>
               <div className="space-y-2 text-gray-400">
                 <div>About Us</div>
-                <div>Blood Donation Facts</div>
-                <div>Emergency Contact</div>
+                <div>Photo Gallery</div>
+                <div>Join the Club / Membership</div>
                 <div>Privacy Policy</div>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Youth Arts & Sports Club. All rights reserved.</p>
+            <p>
+  &copy; 2025 <a href="http://logicorbtech.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">LogicOrbTech</a>. All rights reserved.
+</p>
+
           </div>
         </div>
       </footer>
