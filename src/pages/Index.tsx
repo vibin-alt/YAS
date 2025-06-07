@@ -135,24 +135,24 @@ const Index = () => {
 
   // Use database activities for upcoming events, or fallback to static events if none
   const upcomingEvents = activities.length > 0 ? activities : [
-    {
-      date: "March 15, 2025",
-      title: "Community Blood Drive",
-      location: "City Community Center",
-      time: "9:00 AM - 5:00 PM",
-    },
-    {
-      date: "March 28, 2025",
-      title: "Blood Donation Awareness Workshop",
-      location: "Local High School",
-      time: "2:00 PM - 4:00 PM",
-    },
-    {
-      date: "April 5, 2025",
-      title: "Health Checkup Camp",
-      location: "Medical College Hospital",
-      time: "8:00 AM - 12:00 PM",
-    },
+    //{
+     ////// date: "March 15, 2025",
+      //title: "Community Blood Drive",
+      //location: "City Community Center",
+      //time: "9:00 AM - 5:00 PM",
+    //},
+    //{
+      //date: "March 28, 2025",
+      //title: "Blood Donation Awareness Workshop",
+      //location: "Local High School",
+      //time: "2:00 PM - 4:00 PM",
+    //},
+    //{
+      //date: "April 5, 2025",
+      //title: "Health Checkup Camp",
+      //location: "Medical College Hospital",
+      //time: "8:00 AM - 12:00 PM",
+    //},
   ];
 
   return (
@@ -206,10 +206,7 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
                 <Users className="h-6 w-6 text-blue-600" />
                 <span className="font-semibold">500+ Active Members</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Heart className="h-6 w-6 text-red-600" />
-                <span className="font-semibold">2000+ Lives Saved</span>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -411,7 +408,7 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
                   <MessageCircle className="h-6 w-6" />
                 </a>
                 <a 
-                  href="https://instagram.com/lifesaverclub" 
+                  href="https://instagram.com/Youth Arts&Sports Club" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-pink-500 transition-colors"
@@ -419,7 +416,7 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
                   <Instagram className="h-6 w-6" />
                 </a>
                 <a 
-                  href="https://facebook.com/lifesaverclub" 
+                  href="https://facebook.com/Youth Arts&Sports Club" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -433,11 +430,11 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+917034242925</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>info@lifesaverclub.org</span>
+                  <span>info@youthartsandsportsclub.org</span>
                 </div>
               </div>
             </div>
