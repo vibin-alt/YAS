@@ -160,10 +160,10 @@ const Index = () => {
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-red-100">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <Heart className="h-8 w-8 text-red-600" />
-            <h1 className="text-2xl font-bold text-gray-800">YOUTH ARTS & SPORTS CLUB</h1>
-          </div>
+    <div className="flex items-center space-x-3">
+  <img src="/YAS.jpeg" alt="Club Logo" className="h-10 w-10 object-contain" />
+  <h1 className="text-2xl font-bold text-gray-800">Youth Arts & Sports Club</h1>
+</div>
           <div className="flex items-center space-x-4">
             <Dialog open={isBloodRequestOpen} onOpenChange={setIsBloodRequestOpen}>
               <DialogTrigger asChild>
@@ -214,26 +214,28 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
 
       {/* Activities Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Activities</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {defaultActivities.map((activity, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <div className="mx-auto w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                    <activity.icon className="h-8 w-8 text-red-600" />
-                  </div>
-                  <CardTitle className="text-xl">{activity.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-600">{activity.description}</CardDescription>
-                </CardContent>
-                
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-4">
+    <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Activities</h3>
+    <div className="grid md:grid-cols-3 gap-8">
+      {defaultActivities.map((activity, index) => (
+        <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
+          <CardHeader>
+            <div className="mx-auto w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <activity.icon className="h-8 w-8 text-red-600" />
+            </div>
+            <CardTitle className="text-xl">{activity.title}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <CardDescription className="text-gray-600 text-justify">
+              {activity.description}
+            </CardDescription>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Upcoming Events */}
       <section className="py-16 bg-gray-50">
@@ -392,8 +394,8 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Heart className="h-6 w-6 text-red-600" />
-                <h4 className="text-xl font-bold">YOUTH ARTS & SPORTS CLUB</h4>
+                
+                <h4 className="text-xl font-bold">Youth Arts & Sports Club</h4>
               </div>
               <p className="text-gray-400 mb-4">
                 To promote the holistic development of our members by encouraging participation in sports, arts, and community service, empowering individuals to grow, lead, and contribute positively to society.
@@ -450,7 +452,7 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 YOUTH ARTS & SPORTS CLUB. All rights reserved.</p>
+            <p>&copy; 2025 Youth Arts & Sports Club. All rights reserved.</p>
           </div>
         </div>
       </footer>
