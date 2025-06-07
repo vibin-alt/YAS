@@ -7,7 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
-import { Heart, Users, Calendar as CalendarIcon, MapPin, Phone, Mail, Droplets, Facebook, Instagram, MessageCircle,Trophy,Palette } from "lucide-react";
+import { Heart, Users, Calendar as CalendarIcon, MapPin, Phone, Mail, Droplets, Facebook, Instagram, MessageCircle,Trophy,Palette,Handshake } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
@@ -118,18 +118,18 @@ const Index = () => {
   const defaultActivities = [
     {
       title: "Sports Development",
-      description: "We actively organize and participate in local and regional sports events, promoting fitness and team spirit.",
+      description: "At Youth Arts Sports Club, we strongly believe that sports play a vital role in shaping discipline, teamwork, and leadership among young individuals. Our club actively encourages members to participate in various sports such as football, cricket, volleyball, and athletics. These activities not only promote physical fitness but also help build confidence, focus, and a strong sense of community. Through regular practice sessions and participation in local and regional tournaments, our members develop their skills and grow both on and off the field.",
       icon: Trophy,
     },
     {
       title: "Arts & Cultural Programs",
-      description: "We believe in nurturing artistic expression. Our club hosts a variety of programs such as:",
+      description: "At Youth Arts Sports Club, we are committed to nurturing the artistic and creative talents of our members. The club actively promotes participation in various forms of art, including painting, music, dance, drama, and traditional cultural expressions. We regularly organize events such as cultural nights, talent shows, and art exhibitions to provide a platform for members to showcase their skills. These programs not only encourage creativity and self-expression but also help preserve and celebrate the rich cultural heritage of our community. Through the arts, we aim to inspire confidence, build character, and strengthen bonds among our members.",
       icon: Palette,
     },
     {
       title: "Community Service",
-      description: "We are proud to contribute to society through impactful initiatives like:",
-      icon: Phone,
+      description: "At Youth Arts Sports Club, we believe in giving back to the community and making a positive difference in the lives of others. Our members are actively involved in a variety of social service initiatives aimed at supporting those in need and promoting social responsibility. We regularly organize blood donation drives, charity fund collections, and community clean-up campaigns. During times of crisis or natural disasters, the club steps forward to provide relief and assistance. These efforts not only benefit the community but also instill a strong sense of empathy, unity, and civic duty among our members.",
+      icon: Handshake,
     },
   ];
 
@@ -228,6 +228,7 @@ Located in Poovathipoyil, Kerala, Youth Arts Sports Club is a community-driven o
                 <CardContent>
                   <CardDescription className="text-gray-600">{activity.description}</CardDescription>
                 </CardContent>
+                
               </Card>
             ))}
           </div>
