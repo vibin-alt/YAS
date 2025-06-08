@@ -339,11 +339,11 @@ const Index = () => {
                       />
                     </div>
                     <div className="space-y-1 sm:space-y-2">
-                      <Label htmlFor="email">Email Address</Label>
+                      <Label htmlFor="email">House Name</Label>
                       <Input
                         id="email"
-                        type="email"
-                        placeholder="Your email"
+                        type="text"
+                        placeholder="Your House Name"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className="border-red-200 focus:border-red-400 text-sm sm:text-base"
